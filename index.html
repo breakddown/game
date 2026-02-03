@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fantôme de Tchernobyl</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  * {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.modal {
+  width: 560px;
+  background: #161b22;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #30363d;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #30363d;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  color: #8b949e;
+  cursor: default;
+}
+
+.tab.active {
+  color: #58a6ff;
+  border-bottom: 2px solid #58a6ff;
+  padding-bottom: 4px;
+}
+
+.close {
+  font-size: 20px;
+  color: #8b949e;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.points {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.likes {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  color: #d2a8ff;
+}
+
+.code {
+  color: #ff7b72;
+  word-break: break-all;
+}
+
+.tool {
+  color: #79c0ff;
+}
+
+.link a {
+  color: #79c0ff;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+}
+
+button {
+  padding: 10px 16px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #30363d;
+}
+
+  
+  
+  
+  
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="tabs">
+          <span class="tab active">Challenge</span>
+        </div>
+        <span class="close">×</span>
+      </div>
+
+      <div class="modal-body">
+        <h1>Fantome de Tomioka</h1>
+        <div class="points">Cryptography</div>
+
+
+        <p>
+          In a mountain 🏔 where secrets hide, a gate has been sealed to the world of wonders guarded by a GOST.
+        </p>
+
+        <p>
+          known with his riddle that is old as the time in which he carves 
+          <span class="highlight">"64 64 39 32 38 38 36 30 62 64 62 66 37 65 31 65 38 31 37 63 30 36 30 36 62 65 63 66 31 35 32 64 34 65 33 34 62 63 33 31 34 64 31 32 32 62 64 33"</span>
+        </p>
+
+        <p>
+          next to your knees and keeps repeating :
+          <span class="code">
+            «" the secret 🗝 might be YOU! "»
+          </span>
+        </p>
+
+    
+
+        <div class="form">
+          <input type="text" placeholder="Flag" />
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
